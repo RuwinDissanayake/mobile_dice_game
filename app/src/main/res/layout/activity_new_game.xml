@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewGameActivity"
+    android:background="@drawable/newgame">
+
+    <Button
+        android:id="@+id/generate_button"
+        android:layout_width="126dp"
+        android:layout_height="50dp"
+        android:onClick="onGenerateButtonClick"
+        android:text="Throw"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983" />
+
+    <ImageView
+        android:id="@+id/dice_9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/dice_8"
+        app:layout_constraintEnd_toStartOf="@+id/dice_10"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/dice_8"
+        app:layout_constraintTop_toTopOf="@+id/dice_8"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="COMPUTER PLAYER"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice_3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/dice_7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/dice_8"
+        app:layout_constraintEnd_toStartOf="@+id/dice_8"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/dice_6"
+        app:layout_constraintTop_toTopOf="@+id/dice_8"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dice_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/dice_2"
+        app:layout_constraintEnd_toStartOf="@+id/dice_3"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dice_2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dice_6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/dice_7"
+        app:layout_constraintEnd_toStartOf="@+id/dice_8"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dice_7"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="PLAYER"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/dice_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905" />
+
+    <ImageView
+        android:id="@+id/dice_10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/dice_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toEndOf="@+id/dice_8"
+        app:layout_constraintTop_toTopOf="@+id/dice_9"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dice_4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/dice_3"
+        app:layout_constraintEnd_toStartOf="@+id/dice_5"
+        app:layout_constraintStart_toEndOf="@+id/dice_3"
+        app:layout_constraintTop_toTopOf="@+id/dice_3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dice_5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/dice_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toEndOf="@+id/dice_3"
+        app:layout_constraintTop_toTopOf="@+id/dice_4"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dice_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/dice_3"
+        app:layout_constraintEnd_toStartOf="@+id/dice_3"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/dice_1"
+        app:layout_constraintTop_toTopOf="@+id/dice_3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dice_8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.776"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dice_3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/scoreButton"
+        android:layout_width="126dp"
+        android:layout_height="50dp"
+        android:onClick="onScoreButtonClick"
+        android:text="Score"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="86dp"
+        android:layout_height="41dp"
+        android:text="Player    Score"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="86dp"
+        android:layout_height="41dp"
+        android:text="Computer Score"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <TextView
+        android:id="@+id/playerScore"
+        android:layout_width="86dp"
+        android:layout_height="41dp"
+        android:text="0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <TextView
+        android:id="@+id/computerScore"
+        android:layout_width="86dp"
+        android:layout_height="41dp"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
